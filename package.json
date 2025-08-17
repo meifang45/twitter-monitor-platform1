@@ -1,0 +1,34 @@
+{
+  "name": "twitter-monitoring-platform",
+  "version": "1.0.0",
+  "description": "Personal Twitter Monitoring Platform - A clean, focused dashboard for monitoring specific Twitter accounts",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=web",
+    "build": "npm run build --workspace=web",
+    "start": "npm run start --workspace=web",
+    "lint": "npm run lint --workspace=web",
+    "lint:fix": "npm run lint --workspace=web -- --fix",
+    "type-check": "npm run type-check --workspace=web",
+    "clean": "rm -rf apps/web/.next apps/web/out node_modules/.cache",
+    "clean:all": "npm run clean && rm -rf node_modules apps/*/node_modules",
+    "reinstall": "npm run clean:all && npm install"
+  },
+  "keywords": [
+    "twitter",
+    "monitoring",
+    "dashboard",
+    "nextjs",
+    "vercel"
+  ],
+  "author": "Developer",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
