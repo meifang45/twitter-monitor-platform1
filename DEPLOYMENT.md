@@ -6,7 +6,7 @@
 
 ```bash
 # NextAuth Configuration
-AUTH_SECRET=your-production-auth-secret-here
+NEXTAUTH_SECRET=your-production-auth-secret-here
 NEXTAUTH_URL=https://your-domain.com
 
 # Twitter API Configuration
@@ -22,7 +22,7 @@ MOCK_DATA_ENABLED=false
 
 ```bash
 # NextAuth Configuration
-AUTH_SECRET=your-development-secret
+NEXTAUTH_SECRET=your-development-secret
 NEXTAUTH_URL=http://localhost:3000
 
 # Twitter API Configuration (optional for development)
@@ -39,7 +39,7 @@ MOCK_DATA_ENABLED=true
 1. **Environment Variables Setup**:
    - Add all required environment variables in Vercel dashboard
    - Ensure `MOCK_DATA_ENABLED=false` for production
-   - Generate a secure `AUTH_SECRET` for production
+   - Generate a secure `NEXTAUTH_SECRET` for production
 
 2. **Build Configuration**:
    - Framework Preset: Next.js
